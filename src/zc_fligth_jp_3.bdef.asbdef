@@ -1,0 +1,24 @@
+projection;
+strict ( 2 );
+use draft;
+use side effects;
+//use side effects;
+
+define behavior for ZC_Fligth_JP_3 alias Travel
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use action acceptTravel;
+  use action rejectTravel;
+  use action deductDiscount;
+  use function GetDefaultsFordeductDiscount;
+
+  use action Resume;
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Prepare;
+}

@@ -1,0 +1,8 @@
+abstract;
+
+define behavior for ZA_Travel_Discount_JP alias TravelDiscount
+{
+
+  field ( mandatory ) discount_percent;
+  field ( readonly ) PercentUnit;
+}
