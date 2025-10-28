@@ -1,0 +1,36 @@
+managed implementation in class zbp_b_jptravel_2 unique;
+strict ( 2 );
+
+define behavior for ZB_JPTravel_2 //alias <alias_name>
+persistent table zjp_travel_2
+lock master
+authorization master ( global, instance )
+//etag master <field_name>
+{
+  //  create ( authorization : global );
+  create;
+  update;
+  delete;
+  field ( readonly ) TravelUUID;
+
+  mapping for zjp_travel_2
+    {
+      AgencyID           = agency_id;
+      BeginDate          = begin_date;
+      BookingFee         = booking_fee;
+      CurrencyCode       = currency_code;
+      CustomerID         = customer_id;
+      Description        = description;
+      EndDate            = end_date;
+      LastChangedAt      = last_changed_at;
+      LocalCreatedAt     = local_created_at;
+      LocalCreatedBy     = local_created_by;
+      LocalLastChangedAt = local_last_changed_at;
+      LocalLastChangedBy = local_last_changed_by;
+      OverallStatus      = overall_status;
+      TotalPrice         = total_price;
+      TravelID           = travel_id;
+      TravelUUID         = travel_uuid;
+    }
+
+}

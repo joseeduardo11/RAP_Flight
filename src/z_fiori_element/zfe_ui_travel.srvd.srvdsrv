@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition for Travel'
+@ObjectModel.leadingEntity.name: 'ZC_FE_Travel'
+define service ZFE_UI_TRAVEL {
+  expose ZC_FE_Travel as Travel;
+}

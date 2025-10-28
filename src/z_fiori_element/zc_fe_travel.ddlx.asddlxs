@@ -1,0 +1,7 @@
+@Metadata.layer: #CORE
+annotate entity ZC_FE_Travel with
+{
+  @UI.lineItem: [{position: 10 }]
+  TravelID;
+
+}
